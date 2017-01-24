@@ -1,15 +1,15 @@
 /*
-Theme Name: Efren Vasquez Blank Theme
-Theme URI:
-Author: Efren Vasquez
+Theme Name: FirstName Blank Theme
+Theme URI: URL for FirstName Blank
+Author: FirstName LastName
 Description: Blank theme for WIE course
 Version: 0.1
 License: Open
-Text Domain: efren_vasquez_blank_template
+Text Domain: firstname_lastname_blank_template
 */
 
 *{
 	color: #000000;
 	font-size: 14px;
-	line-height: 20px;
+	line-height: 16px;
 }
