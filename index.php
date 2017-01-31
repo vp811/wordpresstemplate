@@ -1,12 +1,26 @@
-    <?php get_header(); ?>
+<?php get_header(); ?>
 
-    <!-- Begin Section Container -->
-        <section class="row">
-            <div class="twelve columns">
-                <h2>Section Content - cool</h2>
-                <p>This is some cool section content</p>
-            </div>
-        </section>
-    <!-- End Section -->
+<!-- Begin Section Container -->
+    <section class="row">
+        <div class="twelve columns">
 
-    <?php get_footer(); ?>
+        <!-- BEGIN LOOP -->
+        			<?php
+        			if ( have_posts() ) {
+        			    while ( have_posts() ) {
+        			        the_post(); ?>
+
+                            <h3><?php the_title(); ?></h3>
+                            <?php the_excerpt(); ?>
+
+                        <?php
+        			    } // end while
+        			} // end if
+        			?>
+        <!-- END LOOP -->
+
+        </div>
+    </section>
+<!-- End Section -->
+
+<?php get_footer(); ?>
