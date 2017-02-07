@@ -18,3 +18,13 @@
                 <hr />
             </div>
         </header>
+
+        <div clas="row">
+            <div clas="twelve columns">
+                <?php wp_nav_menu(array(
+            			'sort_column'        =>  'menu_order',
+            			'container_class'    =>  'blank-menu-header'
+            		));
+                ?>
+            </div>
+        </div>
